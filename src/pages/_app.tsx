@@ -1,5 +1,4 @@
 import {
-  Container,
   CssBaseline,
   makeStyles,
   Theme,
@@ -21,7 +20,6 @@ const useStyle = makeStyles((theme: Theme) => ({
     overflow: "auto",
   },
   container: {
-    paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(4),
   },
   appBarSpacer: theme.mixins.toolbar,
@@ -49,9 +47,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           <SideBar open={open} handleDrawerOpen={handleDrawerOpen} />
           <div className={classes.content}>
             <div className={`${classes.appBarSpacer}`} />
-            <Container className={classes.container}>
+            {/* <Container maxWidth="xl" className={classes.container}> */}
               <Component {...pageProps} />
-            </Container>
+            {/* </Container> */}
           </div>
         </div>
       </ThemeProvider>

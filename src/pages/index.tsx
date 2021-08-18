@@ -20,9 +20,9 @@ const Home: NextPage = () => {
   const classes = useStyle();
 
   return (
-    <Paper>
+    
       <h1>Teste</h1>
-    </Paper>
+    
     
   );
 };

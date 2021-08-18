@@ -12,7 +12,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { FC } from "react";
 
-const drawerWidth = 240;
+const drawerWidth = 280;
 
 const useStyles = makeStyles((theme: Theme) => ({
   toolbar: {
@@ -53,7 +53,9 @@ const NavBar: FC<NavBarProps> = ({open, handleDrawerOpen}:NavBarProps) => {
   const classes = useStyles();
   return (
     <AppBar
+      color="default"
       position="absolute"
+      style={{boxShadow:'0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06)'}}
       className={clsx(classes.appBar, open && classes.appBarShift)}
     >
       <Toolbar className={classes.toolbar}>
